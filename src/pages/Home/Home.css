@@ -1,0 +1,119 @@
+.home {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+  
+.photoweb {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+  
+.collapseContainer {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+  
+.collapseHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.collapseHome {
+    background-color: lightgrey;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.homep {
+    font-size: 14px;
+    overflow: hidden;
+}
+.divhome {
+    display: flex;
+    justify-content: space-between;
+}
+.divhomediv {
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    display: block;
+}
+
+.line {
+    display: block;
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: typing 4s steps(40) forwards;
+    margin-bottom: 20px; 
+}
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+}
+
+.line:nth-child(1) {
+    animation: typing 3s steps(40) 0s forwards; 
+}
+
+.line:nth-child(2) {
+    animation: typing 3s steps(40) 3s forwards; 
+}
+
+.line:nth-child(3) {
+    animation: typing 3s steps(40) 6s forwards; 
+}
+.divhomebuttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.homebuttons{ 
+    width: 30%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: darkcyan;
+    padding: 20px;
+    cursor: pointer;
+}
+.homebuttons:hover{
+    color: darkcyan;
+    background-color:  white;
+}
+@media (max-width: 767.99px) {
+    .line {
+        font-size: 14px;
+    }
+    .photoweb {
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+    }
+}

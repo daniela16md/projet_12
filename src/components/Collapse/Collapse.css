@@ -1,0 +1,33 @@
+.collapse-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.collapse-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.collapse-content {
+    scroll-behavior: smooth;
+}
+
+.collapse-header svg {
+    transition: transform 0.3s ease;
+}
+
+.collapse-header.open svg {
+    transform: rotate(180deg);
+}
+.body {
+    scroll-behavior: smooth;
+}

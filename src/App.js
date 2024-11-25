@@ -1,19 +1,21 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Projets from './pages/Projects/Projets';
+import Projets from './pages/Projets/Projets';
 import Contact from './pages/Contact/Contact';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer'
+import HeaderDM from './components/HeaderDM/HeaderDM';
+import Footer from './components/Footer/Footer';
+import SoftSkills from './pages/Softskills/Softskills';
 
 function App() {
   return (
     <Router>
-      <Header />
+      <HeaderDM />
       <Routes> 
         <Route path="/" element= {<Home />}/>
         <Route path="/projets" element= {<Projets />}/>
         <Route path="/dashboard" element= {<Contact/>}/>
+        <Route path="/softskills" element= {<SoftSkills/>}/>
       </Routes>
       <Footer />
     </Router>

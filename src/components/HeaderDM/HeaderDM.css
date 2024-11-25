@@ -1,0 +1,39 @@
+.headerDM {
+    position: fixed;
+    top: 0;  
+    left: 0;
+    right: 0;
+    background-color: #5F5F5Fff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    z-index: 1000; 
+    height: 60px; 
+}
+
+.headerDMleft {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 20px;
+    width: 30%;
+}
+
+.headerDMright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logoHeader{
+    width: 100%;
+    height: 60px;
+    margin-left: 0;
+}
+body {
+    padding-top: 80px; 
+    scroll-behavior: smooth;
+}

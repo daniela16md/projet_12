@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Meteo from '../Meteo /Meteo';
+import './Footer.css';  
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer">
+      <div className="footer-left">
+        &copy; {new Date().getFullYear()} Daniela Mattl. All rights reserved.
+      </div>
+      <div className="footer-meteo">
+        <Meteo />
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
