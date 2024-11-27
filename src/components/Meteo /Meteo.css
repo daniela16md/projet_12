@@ -45,7 +45,7 @@
 .city-button {
     padding: 6px 10px;
     font-size: 14px;
-    background-color: #555;
+    background-color: darkcyan;
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
@@ -56,10 +56,15 @@
 .change-city-button {
     padding: 6px 12px;
     font-size: 14px;
-    background-color: #4CAF50;
+    background-color: darkcyan;
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
     border: none;
     outline: none;
+}
+.change-city-button:hover,
+.city-button:hover {
+    color: darkcyan;
+    background-color: #333;
 }

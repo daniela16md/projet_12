@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .footer-meteo {
@@ -23,6 +23,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    margin-right: 5%;
 }
 
 @media (max-width: 768px) {
@@ -33,6 +34,9 @@
 
     .footer-left {
         margin-left: 0;
+    }
+    .footer-meteo {
+        margin-right: 0;
     }
 }
   

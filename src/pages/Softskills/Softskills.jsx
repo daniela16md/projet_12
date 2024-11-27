@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaCodeBranch, FaBug, FaSearchengin, FaLanguage  } from 'react-icons/fa';
-
+import { FaAngleLeft } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 import skillsData from '../../Data/softskills.json';
 import './Softskills.css'
 const SoftSkills = () => {
@@ -43,6 +44,7 @@ const SoftSkills = () => {
 
   return (
     <div className="softskills-container">
+      <Link to='/' ><div className='arrowleft' ><FaAngleLeft /></div></Link>
       <h2>Soft Skills</h2>
       <div className="skills-list">
         {isLoaded ? (
