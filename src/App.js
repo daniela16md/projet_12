@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact';
 import HeaderDM from './components/HeaderDM/HeaderDM';
 import Footer from './components/Footer/Footer';
 import SoftSkills from './pages/Softskills/Softskills';
+import Apropos from './components/APropos/Apropos';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/dashboard" element= {<Contact/>}/>
         <Route path="/softskills" element= {<SoftSkills/>}/>
         <Route path="/contact" element= {<Contact/>}/>
+        <Route path="apropos" element= {<Apropos />}/>
       </Routes>
       <Footer />
     </Router>

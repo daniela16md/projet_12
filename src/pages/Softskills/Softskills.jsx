@@ -45,7 +45,7 @@ const SoftSkills = () => {
   return (
     <div className="softskills-container">
       <Link to='/' ><div className='arrowleft' ><FaAngleLeft /></div></Link>
-      <h2>Soft Skills</h2>
+      <h2> Skills</h2>
       <div className="skills-list">
         {isLoaded ? (
           skills.map((skill, index) => {

@@ -24,8 +24,8 @@ h2 {
     width: 120px;
     text-align: center;
     transition: transform 0.3s ease;
-    box-sizing: border-box;
-    background-color: rgb(173, 174, 175);
+   
+  
 }
 
 .skill-card:hover {

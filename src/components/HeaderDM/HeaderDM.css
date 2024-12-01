@@ -3,7 +3,6 @@
     top: 0;  
     left: 0;
     right: 0;
-    background-color: #5F5F5Fff;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -37,6 +36,7 @@
 }
 .pheader {
     margin-left: 70px;
+    color: darkcyan;
 }
 body {
     padding-top: 80px; 
@@ -98,4 +98,45 @@ display: block;
     text-decoration: none;
     font-size: 1rem;
 }
+}
+.divhomebuttons {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    padding-right: 10%;
+}
+.homebuttons{ 
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: darkcyan;
+    cursor: pointer;
+    margin-top: 40px;
+    height: 40px;
+    width: 120px;
+    margin: 0;
+   
+}
+.homebuttons:hover{
+    color: darkcyan;
+    background-color: rgb(224, 230, 224);
+}
+.buttoncontact {
+    color: darkcyan; 
+    margin-left: 5px;
+}
+@media (max-width: 767.99px) {
+    .headerDM {
+        flex-direction: row-reverse;
+        margin-left:15%;
+        margin-right: 15%;
+    }
+    .divhomebuttons {
+        margin-right: 0;
+    }
+    .homebuttons {
+        width: 70px;
+    }
+   
 }

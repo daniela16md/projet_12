@@ -3,19 +3,19 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #333;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+    justify-content: center;
+
 }
 
 .footer-left {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: darkcyan;
     margin-left: 5%;
+    padding: 20px;
 }
 
 .footer-meteo {
@@ -24,6 +24,15 @@
     align-items: center;
     gap: 10px;
     margin-right: 5%;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-icon{
+    width: 30px;
+    height: 20px;
 }
 
 @media (max-width: 768px) {
