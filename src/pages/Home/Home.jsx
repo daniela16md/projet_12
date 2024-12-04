@@ -1,5 +1,8 @@
 import React from 'react';
 import PhotoWeb from '../../images/PhotoWeb.webp';
+import Projects from '../../components/Projects/Projects';
+import Skills from '../../components/Skills/Skllls';
+import Parcours from '../../components/Parcours/Parcours';
 import './Home.css';
 import '../../components/Modal/Modal.css';
 
@@ -20,6 +23,9 @@ const Home = () => {
         </div>
         <img className="photoweb" src={PhotoWeb} alt="Daniela" />
       </div>
+      <Projects />
+      <Skills />
+      <Parcours />
 
       
     </div>

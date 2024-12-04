@@ -16,46 +16,68 @@
         },
         {
             "id": 3,
+            "name": "Sass",
+            "icon": "FaSass",
+            "color": "#CD6799", 
+            "level": 80
+        },
+        {
+            "id": 4,
             "name": "JavaScript",
             "icon": "FaJsSquare",
             "color": "#F7DF1E",
             "level": 80
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "React",
             "icon": "FaReact",
             "color": "#61DBFB",
             "level": 90
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Redux",
             "icon": "FaCodeBranch",
             "color": "#764ABC",
             "level": 70
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Debug",
             "icon": "FaBug",
             "color": "#D8D8D8",
             "level": 70
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "SEO",
             "icon": "FaSearchengin",
             "color": "#D83B01",
             "level": 90
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "ANGLAIS",
             "icon": "FaLanguage",
             "color": "green",
             "level": 90
+        },
+        {
+            "id": 10,
+            "name": "Github",
+            "icon": "FaGithub",
+            "color": "#333",
+            "level": 80
+        },
+        {
+            "id": 11,
+            "name": "Swagger",
+            "icon": "SiSwagger",
+            "color": "green",
+            "level": 80
         }
+
 
     ]
   }
