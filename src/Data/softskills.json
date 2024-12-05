@@ -76,6 +76,13 @@
             "icon": "SiSwagger",
             "color": "green",
             "level": 80
+        },
+        {
+            "id": 12,
+            "name": "NodeJS",
+            "icon": "DiNodejs",
+            "color": "green",
+            "level": 80
         }
 
 

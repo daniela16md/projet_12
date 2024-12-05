@@ -9,18 +9,22 @@ function HeaderDM() {
     <header className="headerDM">
       <div className="headerDMleft">
         <img className="logoHeader" src={PhotoName} alt="logo" />
-        <p className="pheader">DM</p>
+        <div className="pheader-container">
+          <p className="pheader">DM</p>
+        </div>
       </div>
       <div className="divhomebuttons">
         <Link to="/apropos">
           <button className="homebuttons">Apropos</button>
         </Link>
-        <Link to="/projets">
+        <Link to="/#projets">
           <button className="homebuttons">Projets</button>
         </Link>
-
-        <Link to="/softskills">
-          <button className="homebuttons">Soft skills</button>
+        <Link to="/#skills">
+          <button className="homebuttons">Skills</button>
+        </Link>
+        <Link to="/#certificats">
+          <button className="homebuttons">Certificats</button>
         </Link>
       </div>
     </header>

@@ -1,6 +1,6 @@
 .softskills-container {
     text-align: center;
-    padding: 20px;
+    padding: 70px;
 }
   
 h2 {
@@ -24,7 +24,7 @@ h2 {
     width: 120px;
     text-align: center;
     transition: transform 0.3s ease;
-   
+   cursor: pointer;
   
 }
 

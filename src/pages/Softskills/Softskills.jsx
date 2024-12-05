@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaCodeBranch, FaBug, FaSearchengin, FaLanguage  } from 'react-icons/fa';
 import { FaAngleLeft } from "react-icons/fa6";
+import { DiNodejs } from "react-icons/di";
 import { Link } from 'react-router-dom';
 import skillsData from '../../Data/softskills.json';
 import './Softskills.css'
@@ -57,6 +58,7 @@ const SoftSkills = () => {
                         skill.icon === 'FaBug' ? FaBug :
                         skill.icon === 'FaSearchengin' ? FaSearchengin :
                         skill.icon === 'FaLanguage' ? FaLanguage :
+                        skill.icon === 'DiNodejs' ? DiNodejs :
                         null;
 
             return (

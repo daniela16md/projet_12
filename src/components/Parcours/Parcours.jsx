@@ -21,7 +21,7 @@ function Parcours() {
   
     return (
       <div className="carrousel-container">
-        <h2>Mon Parcours de Diplômes</h2>
+        <h2>Mes Diplômes</h2>
   
         <div className="carrousel">
           <div className="arrow left" onClick={handlePrev}>

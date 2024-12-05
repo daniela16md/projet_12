@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Riding Cities",
         "technologies": "Html, css",
-        "image": "../../images/ohmyfood.webp" ,
+        "image": "/ohmyfood.webp" ,
         "text": "Premiers pas dans le langage HTML"
     },
     {
@@ -17,8 +17,8 @@
     {
         "id": 3,
         "name": "Oh my food",
-        "technologies": "HTML & CSS",
-        "image":"ohmyfood.webp" ,
+        "technologies": "HTML & SCSS",
+        "image":"/ohmyfood.webp" ,
         "github": "https://github.com/daniela16md/danielaohmyfood.git",
         "text": "Développer un site mobile-first qui répertorie les menus de restaurants."
     },

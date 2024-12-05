@@ -36,10 +36,23 @@
     margin-left: 0;
     display: none;
 }
+
 .pheader {
     margin-left: 70px;
     color: darkcyan;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotateDM 4s linear infinite;
+    animation-delay: 3s;
 }
+@keyframes rotateDM {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 body {
     padding-top: 80px; 
     scroll-behavior: smooth;
