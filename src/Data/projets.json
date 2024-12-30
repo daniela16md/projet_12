@@ -18,7 +18,8 @@
         "id": 3,
         "name": "Oh my food",
         "technologies": "HTML & SCSS",
-        "image":"/ohmyfood.webp" ,
+        "image":"/ohmyfood.webp",
+        "lien": "https://daniela16md.github.io/danielaohmyfood/",
         "github": "https://github.com/daniela16md/danielaohmyfood.git",
         "text": "Développer un site mobile-first qui répertorie les menus de restaurants."
     },

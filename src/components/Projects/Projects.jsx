@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import React from 'react';
+import { FaGithub, FaLink } from 'react-icons/fa';
+import ReactModal from 'react-modal'; 
 import projects from '../../Data/projets.json'; 
-import './Projects.css'
+import './Projects.css';
 
+ReactModal.setAppElement('#root');
 
 function Projects() {
   const [selectedTech, setSelectedTech] = useState('');
-  
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [currentUrl, setCurrentUrl] = useState('');
   const handleTechChange = (event) => {
     setSelectedTech(event.target.value);
   };
@@ -18,6 +22,16 @@ function Projects() {
     : projects.projects;
 
   const techOptions = ['HTML', 'CSS', 'JS', 'React', 'NodeJS', 'Redux', 'SEO', 'Lighthouse', 'SCSS'];
+
+  const openModal = (url) => {
+    setCurrentUrl(url); 
+    setIsModalOpen(true); 
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); 
+    setCurrentUrl(''); 
+  };
 
   return (
     <div className="projects-page">
@@ -41,15 +55,36 @@ function Projects() {
               <h3>{project.name}</h3>
               <p><strong>Technologies:</strong> {project.technologies}</p>
               <p>{project.text}</p>
-              {project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
-              )}
+              <div className='lienssite'>
+                {project.github && (
+                  <button className="project-link" onClick={() => window.open(project.github, '_blank')}>
+                    <FaGithub />
+                  </button>
+                )}
+                {project.lien && (
+                  <button className="project-link" onClick={() => openModal(project.lien)}>
+                    <FaLink />
+                  </button>
+                )}
+              </div>
             </div>
           ))
         ) : (
           <p>Aucun projet trouvé pour cette technologie.</p>
         )}
       </div>
+
+      <ReactModal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal} 
+        contentLabel="Project Link"
+        className="modal-content"
+        overlayClassName="modal-overlay"
+        ariaHideApp={false} 
+      >
+        <button className="modal-close" onClick={closeModal}>X</button>
+        <iframe src={currentUrl} width="100%" height="600px" title="Project Site" />
+      </ReactModal>
     </div>
   );
 }
