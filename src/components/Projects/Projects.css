@@ -1,6 +1,9 @@
 .projects-page{
     text-align: center;
 }
+.project-image{
+    height: 40%;
+}
 /* CSS pour la modale */
 .modal-overlay {
     position: fixed;
@@ -43,7 +46,7 @@
 }
     
 .project-link:hover {
-    background-color: white;
+    background-color: #fafafa;
     color: darkcyan;
 }
 

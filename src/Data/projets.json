@@ -4,14 +4,14 @@
         "id": 1,
         "name": "Riding Cities",
         "technologies": "Html, css",
-        "image": "/ohmyfood.webp" ,
+        "image": "ridingcities.webp" ,
         "text": "Premiers pas dans le langage HTML"
     },
     {
         "id": 2,
         "name": "Booki",
         "technologies": "HTML & CSS",
-        "image": "ohmyfood.webp" ,
+        "image": "booki.webp" ,
         "text": "Création d'un site d'une agence de voyage."
     },
     {
@@ -27,7 +27,7 @@
         "id": 4,
         "name": "Print-it",
         "technologies": "HTML & JS",
-        "image": "ohmyfood.webp" ,
+        "image": "printit.webp" ,
         "github": "https://github.com/daniela16md/daniela_print_it-soutenance.git",
         "text": "Création d'une page web pour une société d'imprimerie."
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "name": "Sophie Bluel",
         "technologies": "HTML & CSS & JS",
-        "image":"ohmyfood.webp" ,
+        "image":"sophiebluel.webp" ,
         "github": "https://github.com/daniela16md/Sophie-bluel_danielamd.git",
         "text": "Création d'une page web dynamique pour le site internet d'une architecte d'intérieur."
     },
@@ -43,7 +43,8 @@
         "id": 6,
         "name":  "Nina-Carducci",
         "technologies": "SEO, accessibilité, Lighthouse, Wave",
-        "image":"ohmyfood.webp" ,
+        "image":"ninacarducci.webp" ,
+        "lien": "https://daniela16md.github.io/projet_n-8/",
         "github": "https://github.com/daniela16md/projet_n-8.git",
         "text": "Optimisation du référencement du site de Nina Carducci."
     },
@@ -51,7 +52,7 @@
         "id": 7,
         "name": "Kasa",
         "technologies": "React, CRA et SCSS",
-        "image": "ohmyfood.webp" ,
+        "image": "kasa.webp" ,
         "github": "https://github.com/daniela16md/projet_7.git",
         "text": "Création d'une application web de location immobilière."
     },
@@ -59,7 +60,7 @@
         "id": 8,
         "name": "724 Events",
         "technologies": "React",
-        "image": "ohmyfood.webp" ,
+        "image": "724events.webp" ,
         "github": "https://github.com/daniela16md/projet9.git",
         "text": "Site internet d'une agence événementiel, deboggage du site."
     },
@@ -67,7 +68,7 @@
         "id": 9,
         "name": "ArgentBank",
         "technologies": "React & Redux & NodeJS",
-        "image":"ohmyfood.webp" ,
+        "image":"argentbank.webp" ,
         "github": "https://github.com/daniela16md/projetargentbanck.git",
         "text": "Création d'une application bancaire avec React."
     }

@@ -1,5 +1,7 @@
 .headerDM {
     position: fixed;
+    background-color: #fafafa;
+    z-index: 1000;
     top: 0;  
     left: 0;
     right: 0;
@@ -135,7 +137,7 @@ display: block;
 }
 .homebuttons:hover{
     color: darkcyan;
-    background-color: rgb(224, 230, 224);
+    background-color: #fafafa;
 }
 .buttoncontact {
     color: darkcyan; 
