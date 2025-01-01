@@ -111,3 +111,7 @@
     font-size: 18px;
   }
 }
+.swiper-buttons{
+  display: flex;
+  justify-content: space-around;
+}

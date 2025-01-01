@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react'; // Ajoute useRef ici
 import certificates from '../../Data/certificats.json'; 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import 'swiper/css';
 import Modal from 'react-modal';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';  // Import des icônes de flèches
 import './Certificates.css';
 
 Modal.setAppElement('#root');
@@ -10,6 +11,9 @@ Modal.setAppElement('#root');
 function Certificates() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentCertificat, setCurrentCertificat] = useState(null);
+
+  // Déclaration de swiperRef
+  const swiperRef = useRef(null);
 
   const openModal = (certificat) => {
     setCurrentCertificat(certificat);
@@ -26,19 +30,16 @@ function Certificates() {
       <h2>Mes Certificats</h2>
 
       <Swiper
+        ref={swiperRef} // Ajout de la référence ici
         spaceBetween={30} 
         slidesPerView={3} 
         loop={true}
-        autoplay={{
-          delay: 2000, 
-          disableOnInteraction: false,
-        }}
-        speed={500} 
+        speed={500}
         breakpoints={{
           100: { slidesPerView: 1 },
-          640: { slidesPerView: 1 },  
-          768: { slidesPerView: 2 },  
-          1024: { slidesPerView: 3 }, 
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {certificates.certificats.map((certificat) => (
@@ -54,6 +55,16 @@ function Certificates() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Flèches de navigation */}
+      <div className="swiper-buttons">
+        <button className="swiper-button-left" onClick={() => swiperRef.current.swiper.slidePrev()}>
+          <FaChevronLeft size={30} />
+        </button>
+        <button className="swiper-button-right" onClick={() => swiperRef.current.swiper.slideNext()}>
+          <FaChevronRight size={30} />
+        </button>
+      </div>
 
       <Modal
         isOpen={isModalOpen}
@@ -71,7 +82,7 @@ function Certificates() {
               className="modal-certificat-image" 
             />
             <h3>{currentCertificat.tittle}</h3>
-            <p>{currentCertificat.description || 'Certifficat obtenu en cours de formation Openclassrooms.'}</p>
+            <p>{currentCertificat.description || 'Certificat obtenu en cours de formation Openclassrooms.'}</p>
           </div>
         )}
       </Modal>

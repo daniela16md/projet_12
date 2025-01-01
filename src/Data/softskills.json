@@ -57,11 +57,11 @@
             "level": 90
         },
         {
-            "id": 9,
-            "name": "ANGLAIS",
-            "icon": "FaLanguage",
+           "id": 9,
+            "name": "Swagger",
+            "icon": "SiSwagger",
             "color": "green",
-            "level": 90
+            "level": 80 
         },
         {
             "id": 10,
@@ -72,17 +72,17 @@
         },
         {
             "id": 11,
-            "name": "Swagger",
-            "icon": "SiSwagger",
+            "name": "Node.JS",
+            "icon": "IoLogoNodejs",
             "color": "green",
             "level": 80
         },
         {
             "id": 12,
-            "name": "NodeJS",
-            "icon": "DiNodejs",
+            "name": "ANGLAIS",
+            "icon": "FaLanguage",
             "color": "green",
-            "level": 80
+            "level": 90
         }
 
 

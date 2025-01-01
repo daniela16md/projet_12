@@ -5,6 +5,7 @@
         "name": "Riding Cities",
         "technologies": "Html, css",
         "image": "ridingcities.webp" ,
+        "github":"https://github.com/daniela16md/riding_cities.git",
         "text": "Premiers pas dans le langage HTML"
     },
     {
@@ -12,6 +13,8 @@
         "name": "Booki",
         "technologies": "HTML & CSS",
         "image": "booki.webp" ,
+        "lien": "https://daniela16md.github.io/projet3/",
+        "github": "https://github.com/daniela16md/projet3.git",
         "text": "Création d'un site d'une agence de voyage."
     },
     {
@@ -28,6 +31,7 @@
         "name": "Print-it",
         "technologies": "HTML & JS",
         "image": "printit.webp" ,
+        "lien": "https://daniela16md.github.io/daniela_print_it-soutenance/",
         "github": "https://github.com/daniela16md/daniela_print_it-soutenance.git",
         "text": "Création d'une page web pour une société d'imprimerie."
     },

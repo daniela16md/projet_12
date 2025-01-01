@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaSass, FaJsSquare, FaReact, FaCodeBranch, FaBug, FaSearchengin, FaLanguage, FaGithub,  } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaSass, FaJsSquare, FaReact, FaCodeBranch, FaBug, FaSearchengin, FaLanguage, FaGithub,} from 'react-icons/fa';
 import { SiSwagger } from "react-icons/si";
+import { IoLogoNodejs } from 'react-icons/io';
 import skillsData from '../../Data/softskills.json';
 import './Skills.css'
 const Skills = () => {
@@ -58,6 +59,7 @@ const Skills = () => {
                         skill.icon === 'FaLanguage' ? FaLanguage :
                         skill.icon === 'FaGithub' ? FaGithub :
                         skill.icon === 'SiSwagger' ? SiSwagger :
+                        skill.icon === 'IoLogoNodejs' ? IoLogoNodejs :
                         null;
 
             return (

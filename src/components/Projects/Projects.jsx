@@ -17,7 +17,7 @@ function Projects() {
 
   const filteredProjects = selectedTech
     ? projects.projects.filter(project => 
-        project.technologies.toLowerCase().includes(selectedTech.toLowerCase())
+      project.technologies.includes(selectedTech)
       )
     : projects.projects;
 

@@ -143,17 +143,57 @@ display: block;
     color: darkcyan; 
     margin-left: 5px;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+  
+.hamburgerline {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+}
+@media (max-width: 1024px) {
+    .divhomebuttons{ 
+        gap:10%;
+    }
+}
 @media (max-width: 767.99px) {
     .headerDM {
         flex-direction: row-reverse;
-        margin-left:15%;
-        margin-right: 15%;
+        padding-left: 5%;
+        padding-right: 15%;
     }
+   
     .divhomebuttons {
-        margin-right: 0;
+       display:none;
+       flex-direction: column;
+        width: 40%;
+        background-color: #fafafa;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        margin-right: 15%;
+        gap: 15px;
+        border-radius: 0 0 20px 20px;
     }
-    .homebuttons {
-        width: 70px;
+    .divhomebuttons.open {
+        display: flex; 
     }
+    
+    .hamburger {
+        display: flex; 
+    }
+    .divhomebuttons.open {
+        display: flex; 
+    }
+    
    
 }
