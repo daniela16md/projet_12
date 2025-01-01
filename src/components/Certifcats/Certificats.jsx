@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react'; // Ajoute useRef ici
+import React, { useState, useRef } from 'react'; 
 import certificates from '../../Data/certificats.json'; 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import 'swiper/css';
 import Modal from 'react-modal';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';  // Import des icônes de flèches
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';  
 import './Certificates.css';
 
 Modal.setAppElement('#root');
@@ -12,7 +12,6 @@ function Certificates() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentCertificat, setCurrentCertificat] = useState(null);
 
-  // Déclaration de swiperRef
   const swiperRef = useRef(null);
 
   const openModal = (certificat) => {
@@ -30,7 +29,7 @@ function Certificates() {
       <h2>Mes Certificats</h2>
 
       <Swiper
-        ref={swiperRef} // Ajout de la référence ici
+        ref={swiperRef} 
         spaceBetween={30} 
         slidesPerView={3} 
         loop={true}
@@ -56,7 +55,6 @@ function Certificates() {
         ))}
       </Swiper>
 
-      {/* Flèches de navigation */}
       <div className="swiper-buttons">
         <button className="swiper-button-left" onClick={() => swiperRef.current.swiper.slidePrev()}>
           <FaChevronLeft size={30} />
