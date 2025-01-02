@@ -22,12 +22,12 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router >
+    <Router basename="/projet_12">
        <ScrollToTop />
       <HeaderDM />
       <Routes> 
-        <Route path="/" element= {<Home />}/>
-        <Route path="/apropos" element= {<Apropos />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/apropos" element={<Apropos />} />
       </Routes>
       <Footer />
     </Router>
