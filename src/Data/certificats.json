@@ -3,78 +3,78 @@
         {
             "id": 1,
             "tittle": "Formation",
-            "image":"/formation.webp"
+            "image":"https://daniela16md.github.io/projet_12/formation.webp"
         },
         {
             "id": 2,
             "tittle": "HTML et CSS",
-            "image":"HTML.webp"
+            "image":"https://daniela16md.github.io/projet_12/HTML.webp"
         },
         {
             "id": 3,
             "tittle": "Figma",
-            "image":"/Figma.webp"
+            "image":"https://daniela16md.github.io/projet_12/Figma.webp"
         },
         {
             "id": 4,
             "tittle": "Animations CSS",
-            "image":"/animations.webp"
+            "image":"https://daniela16md.github.io/projet_12/animations.webp"
         },
         {
             "id": 5,
             "tittle": "Git et GitHub",
-            "image":"/Github.webp"
+            "image":"https://daniela16md.github.io/projet_12/Github.webp"
         },
         {
             "id": 6,
             "tittle": "Api Rest",
-            "image":"API.webp"
+            "image":"https://daniela16md.github.io/projet_12/API.webp"
         },
         {
             "id": 7,
             "tittle": "Java-script",
-            "image":"Javascript.webp"
+            "image":"https://daniela16md.github.io/projet_12/Javascript.webp"
         },
         {
             "id": 8,
             "tittle": "Algorithmes",
-            "image":"/algorithmes.webp"
+            "image":"https://daniela16md.github.io/projet_12/algorithmes.webp"
         },
         {
             "id": 9,
             "tittle": "Site web",
-            "image":"/online.webp"
+            "image":"https://daniela16md.github.io/projet_12/online.webp"
         },
         {
             "id": 10,
             "tittle": "Tests techniques",
-            "image":"/TestsTechniques.webp"
+            "image":"https://daniela16md.github.io/projet_12/TestsTechniques.webp"
         },
         {
             "id":11,
             "tittle": "Aplication React",
-             "image":"React.webp"
+             "image":"https://daniela16md.github.io/projet_12/React.webp"
         }, 
         {
             "id": 12,
             "tittle": "SASS",
-            "image":"/Sass.webp"
+            "image":"https://daniela16md.github.io/projet_12/Sass.webp"
         },
        
         {
             "id": 13,
             "tittle": "Corrigez vos bugs",
-            "image":"Bugs.webp"
+            "image":"https://daniela16md.github.io/projet_12/Bugs.webp"
         },
         {
             "id": 14,
             "tittle": "SEO",
-            "image":"SEO.webp"
+            "image":"https://daniela16md.github.io/projet_12/SEO.webp"
         },
         {
             "id": 15,
             "tittle": "Google",
-            "image":"/google.webp",
+            "image":"https://daniela16md.github.io/projet_12/google.webp",
             "description": "Certificat Google Ateliers Numériques"
         }
               
