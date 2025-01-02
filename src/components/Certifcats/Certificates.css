@@ -45,13 +45,14 @@
   width: 100%;
   padding-bottom: 50px;
 }
-.modal-content {
+.modal-content-certificats {
   position: relative;
   background: white;
   padding: 20px;
   border-radius: 8px;
   max-width: 500px;
   margin: auto;
+  height: 500px;
 }
 
 .modal-overlay {
@@ -87,18 +88,19 @@
   cursor: pointer;
   border-radius: 5px;
 }
-@media (max-width: 768px) {
-  .certificat-card {
-   margin-left: 7%;
-  }
-}
+
 @media (max-width: 768px) {
   .certificat-card {
     width: 300px;
+    margin-left: 7%;
   }
 
   .certificat-title {
     font-size: 15px;
+  }
+  .modal-content-certificats {
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -115,3 +117,18 @@
   display: flex;
   justify-content: space-around;
 }
+button {
+  padding: 10px 20px;
+  background-color:  darkcyan;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+ color: darkcyan;
+ background-color: rgb(231, 228, 228);
+}
+
