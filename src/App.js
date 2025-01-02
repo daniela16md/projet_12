@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
 import { useEffect } from 'react';
-import Home from './pages/Home/Home';
+import Home from './pages/HomePage/Home'
 import HeaderDM from './components/HeaderDM/HeaderDM';
 import Footer from './components/Footer/Footer';
-import Apropos from './components/APropos/Apropos';
+import Apropos from './pages/AproposPage/Apropos'
 
 function ScrollToTop() {
   const location = useLocation();

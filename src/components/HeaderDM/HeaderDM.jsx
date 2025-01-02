@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './HeaderDM.css';
 import PhotoName from '../../images/PhotoName.webp';
 import { Link } from 'react-router-dom'; 
-import '../../pages/Home/Home.css'
+import '../../pages/HomePage/Home.css'
 
 function HeaderDM() {
   const [menuOpen, setMenuOpen] = useState(false);

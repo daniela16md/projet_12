@@ -1,15 +1,22 @@
 * {
   box-sizing: border-box;
 }
-body {
+body,html {
   margin: auto;
   max-width: 1440px;
   min-width: 320px;
   background-color:rgb(231, 228, 228);
 }
-
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 #root {
   width: 100%;
+}
+.content {
+  flex: 1;
 }
 
 .main-container {

@@ -43,7 +43,6 @@ const Home = () => {
       <div id="skills">
         <Skills />
       </div>
-
       <Parcours />
       <div id="certificats">
         <Certificates />
