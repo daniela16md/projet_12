@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './HeaderDM.css';
-import PhotoName from '../../images/PhotoName.webp';
 import { Link } from 'react-router-dom'; 
 import '../../pages/HomePage/Home.css'
 
@@ -13,30 +12,32 @@ function HeaderDM() {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+  
 
   return (
     <header className="headerDM">
       <div className="headerDMleft">
-        <img className="logoHeader" src={PhotoName} alt="logo" />
         <div className="pheader-container">
           <p className="pheader">DM</p>
         </div>
       </div>
       
-      <div className={`divhomebuttons ${menuOpen ? 'open' : ''}`}>
-        <Link to="/apropos" onClick={closeMenu}>
-          <button className="homebuttons">Apropos</button>
-        </Link>
-        <Link to="/#projets" onClick={closeMenu}>
-          <button className="homebuttons">Projets</button>
-        </Link>
-        <Link to="/#skills" onClick={closeMenu}>
-          <button className="homebuttons">Skills</button>
-        </Link>
-        <Link to="/#certificats" onClick={closeMenu}>
-          <button className="homebuttons">Certificats</button>
-        </Link>
-      </div>
+      <nav className={`divhomebuttons ${menuOpen ? 'open' : ''}`}>
+        <ul>
+          <li>
+            <Link to="/apropos" onClick={closeMenu} className="nav-link" activeClassName="active">Apropos</Link>
+          </li>
+          <li>
+            <Link to="/#projets" onClick={closeMenu} className="nav-link" activeClassName="active">Projets</Link>
+          </li>
+          <li>
+            <Link to="/#skills" onClick={closeMenu} className="nav-link" activeClassName="active">Skills</Link>
+          </li>
+          <li>
+            <Link to="/#certificats" onClick={closeMenu} className="nav-link" activeClassName="active">Certificats</Link>
+          </li>
+        </ul>
+      </nav>
 
       <div className="hamburger" onClick={toggleMenu}>
         <div className="hamburgerline"></div>

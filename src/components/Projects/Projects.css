@@ -104,8 +104,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
 }
   
 .filter-label {
     font-weight: bold;
 }
+.filters select {
+    border: 2px solid darkcyan;  
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
