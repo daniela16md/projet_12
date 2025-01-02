@@ -73,7 +73,7 @@ function Certificates() {
       >
         {currentCertificat && (
           <div className="modal-body">
-            <button className="close-modal" onClick={closeModal}>Fermer</button>
+            <button className="close-modal" onClick={closeModal}>X</button>
             <img 
               src={currentCertificat.image} 
               alt={currentCertificat.tittle || 'Certificat'}
