@@ -22,7 +22,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename={("/")}>
+    <Router >
        <ScrollToTop />
       <HeaderDM />
       <Routes> 
